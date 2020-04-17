@@ -1,10 +1,10 @@
 var mapNames = ["split", "haven", "bind"];
 var sides = ["attack","defence","both"];
 
-var attackStrats = ["",""];
-var defenceStrats = ["",""];
-var bothStrats = ["",""];
-
+var attackStrats = ["AttackStrat1","AttackStrat2"];
+var defenceStrats = ["DefenceStrat1","DefenceStrat2"];
+var bothStrats = ["BothStrat1","BothStrat2"];
+var test = 5;
 function testMapName(mapName){
     for(var i = 0; i < mapNames.length; i++){
         if(mapName == mapNames[i]){
