@@ -1,7 +1,7 @@
 var havenAttackStrat = ["rush b","rush a"];
 var havenDefenceStrat = ["",""];
 
-var bindAttackStrat = ["",""];
+var bindAttackStrat = ["binda","bindb"];
 var bindDefenceStrat = ["",""];
 
 var splitAttackStrat = ["",""];
@@ -39,30 +39,35 @@ function getStrat(map, side){
         if(side == "attack"){
             rand = Math.floor(Math.random() * haven.getAttackStrat().length);
             console.log(haven.getAttackStrat()[rand]);
-
+            document.getElementById("stratText").innerHTML = haven.getAttackStrat()[rand];
         } else {
             rand = Math.floor(Math.random() * haven.getDefenceStrat().length);
             console.log(haven.getDefenceStrat()[rand]);
+            document.getElementById("stratText").innerHTML = haven.getDefenceStrat()[rand];
 
         }
     } else if (map == "bind"){
         if(side == "attack"){
             rand = Math.floor(Math.random() * bind.getAttackStrat().length);
             console.log(bind.getAttackStrat()[rand]);
+            document.getElementById("stratText").innerHTML = bind.getAttackStrat()[rand];
 
         } else {
             rand = Math.floor(Math.random() * bind.getDefenceStrat().length);
             console.log(bind.getDefenceStrat()[rand]);
+            document.getElementById("stratText").innerHTML = bind.getDefenceStrat()[rand];
 
         }
     } else if (map == "split"){
         if(side == "attack"){
             rand = Math.floor(Math.random() * split.getAttackStrat().length);
             console.log(split.getAttackStrat()[rand]);
+            document.getElementById("stratText").innerHTML = split.getAttackStrat()[rand];
 
         } else {
             rand = Math.floor(Math.random() * split.getDefenceStrat().length);
             console.log(split.getDefenceStrat()[rand]);
+            document.getElementById("stratText").innerHTML = split.getDefenceStrat()[rand];
         }
     }
 }

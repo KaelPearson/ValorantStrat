@@ -2,12 +2,19 @@
 <html>
    <head>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="stratDecide.js"></script>
+        <script src="stratDecide.js"> </script>
+        <script>var mapName = "bind";</script>
         <title>Bind strat roulette</title>
 
    </head>
 
-
+   <body>
+      <div class="header"> <p id="stratText"></p></div>
+      <div class="center">
+         <button class="button" onclick="getStrat(mapName, 'attack')">Attack</button>
+         <button class="button" onclick="getStrat(mapName, 'defence')">Defence</button>
+      </div>
+   </body>
 
 
 
