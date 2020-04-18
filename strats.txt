@@ -1,30 +1,28 @@
 Haven
 
+    Everyone must buy shortys, all their abilites and rush sewers using everything they have
+
 - Attack -
-shorty rush A sewers
-Can only plant spike in last 10 seconds
-Can only walk the enitre round
+    
 
 
 
 
 - Defend - 
-Can only walk the enitre round
 
 
 
 
 Split
+    
+    You cannot use any ropes
 
 - Attack -
-Can only plant spike in last 10 seconds
-Can only walk the enitre round
 
 
 
 
 - Defend - 
-Can only walk the enitre round
 
 
 
@@ -33,15 +31,25 @@ Can only walk the enitre round
 Bind
 
 - Attack -
-Can only plant spike in last 10 seconds
-Can only walk the enitre round
 
 
 
 
 - Defend -
+
+
+-------------------------------------------------
+
+- Universal Attack -
+Can only plant spike in last 10 seconds
+
+
+
+
+- Universal Defend -
+
+
+
+- Universal Both -
+
 Can only walk the enitre round
-
-
-
-
