@@ -1,7 +1,7 @@
 body {
     background-image: url(images/valorant\ wallpaper.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: stretch;
 }
 
 main {
@@ -15,7 +15,9 @@ h1 {
     font-family: monospace;
     font-size: 50px;
 }
-
+.imageButtonText {
+    color:white;
+}
 .container {
     position: relative;
     text-align: center;
@@ -23,7 +25,7 @@ h1 {
 }
 
 
-.haventxt {
+.mapTxt {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,7 +36,7 @@ h1 {
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 33.333333%;
 }
 
 .row::after {
@@ -42,6 +44,13 @@ h1 {
     clear: both;
     display: table;
 }
+
+
+/*
+LEGACY CODE
+
+**** CANT THIS BE SIMPLE? ****
+
 
 .img-split {
     width: 500px;
@@ -57,6 +66,14 @@ h1 {
     width:500px;
     padding-left: 25px;
     padding-right: 25px;
+} */
+
+
+
+.img-map{
+    width: 500px;
+    height: 280px;
+
 }
 
 .header {
@@ -85,3 +102,13 @@ h1 {
     font-size: 16px;
 }
 
+.topHeader {
+    height: 60px;
+    margin: 30px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    background: black;
+    color: rebeccapurple;
+    font-size: 30px;
+}

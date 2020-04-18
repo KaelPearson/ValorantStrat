@@ -8,41 +8,49 @@
     <body>
 
         <header>
-            <h1>Valorant Strat Roulette</h1>
+            <div class="topHeader"><p>Valorant Strat Roulette</p></div>
         </header>
 
         <main>
 
             <div class="row">
+
                 <div class="column">
                     <div class="container">
                         <a href="haven.html">
-                            <img class = "img-haven" src="images/valorant haven.png" alt="Valorant Haven">
+                            <img class = "img-map" src="images/valorant haven.png" alt="Valorant Haven">
                         </a>
-                        <div class="haventxt">Haven</div>
+                        <a class="imageButtonText" href="haven.html">
+                            <div class="mapTxt">Haven</div>
+                        </a>
                     </div> 
                 </div>
 
                 <div class="column">
-                    <a href="bind.html">
-                        <img class= "img-bind" src="images/valorant Bind.jpg" alt="Valorant Bind">
-                    </a>
+                    <div class="container">
+                        <a href="bind.html">
+                            <img class= "img-map" src="images/valorant Bind.jpg" alt="Valorant Bind">
+                        </a>
+                        <a class="imageButtonText" href="bind.html">
+                            <div class="mapTxt">Bind</div>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="column">
-                    <a href="split.html">
-                        <img class= "img-split" src="images/Valorant Split.jpg" alt="Valorant Split">
-                    </a>
+                    <div class="container">
+                        <a href="split.html">
+                            <img class= "img-map" src="images/Valorant Split.jpg" alt="Valorant Split">
+                        </a>
+                        <a class="imageButtonText" href="split.html">
+                            <div class="mapTxt">Split</div>
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
         </main>
 
-
-        <form>
-            <input type="button" value="Result" onclick="getStrat('haven', 'attack')"/>
-        </form>
-
-        <p id="stratPara"></p>
     </body>
 </html>
