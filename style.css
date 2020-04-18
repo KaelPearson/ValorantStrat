@@ -1,0 +1,32 @@
+body {
+    background-image: url(images/valorant\ wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    padding-top: 225px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 75px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+.img-split {
+    width: 500px;
+}
+
+.img-haven {
+    width: 500px;
+    height: 282px;
+}
+
+.img-bind{
+    width:500px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
