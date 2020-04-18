@@ -41,22 +41,6 @@ h1 {
     color: white;
 }
 
-.container1 {
-    margin-left: 75px;
-    margin-right: 75px;
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.container2 {
-    margin-left: 75px;
-    margin-right: 75px;
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
 .mapTxt {
     position: absolute;
     top: 50%;
@@ -80,6 +64,9 @@ h1 {
     display: table;
 }
 
+
+
+
 .hover-zoom {
     height: 282px;
     overflow: hidden;
@@ -91,80 +78,16 @@ h1 {
 .hover-zoom:hover img {
     transform: scale(1.5);
 }
-
-
-
-/*
-LEGACY CODE
-
-**** CANT THIS BE SIMPLE? ****
-
-
-.img-split {
-    width: 500px;
-}
-
-
-.img-haven {
-    width: 500px;
-    height: 282px;
-}
-
-.img-bind{
-    width:500px;
-    padding-left: 25px;
-    padding-right: 25px;
-} 
-.haven-hover-zoom {
-    height: 282px;
-    overflow: hidden;
-}
-
-.haven-hover-zoom img {
-    transition: transform .5s ease;
-}
-
-.haven-hover-zoom:hover img {
-    transform: scale(1.5);
-}
-
-.haven-hover-zoom--blur img {
+.hover-zoom--blur img {
     transition: transform 1s, filter 1s ease-in-out;
     filter:blur(0);
     transform: scale(1);
 }
 
-.haven-hover-zoom--blur:hover img {
+.hover-zoom--blur:hover img {
     filter: blur(2px);
     transform: scale(1.2);
 }
-
-.bind-hover-zoom {
-    height: 282px;
-    overflow: hidden;
-}
-
-.bind-hover-zoom img {
-    transition: transform .5s ease;
-}
-
-.bind-hover-zoom:hover img {
-    transform: scale(1.5);
-}
-
-.split-hover-zoom {
-    height: 282px;
-    overflow: hidden;
-}
-
-.split-hover-zoom img {
-    transition: transform .5s ease;
-}
-
-.split-hover-zoom:hover img {
-    transform: scale(1.5);
-}
-*/
 
 
 
