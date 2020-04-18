@@ -80,6 +80,41 @@ h1 {
     display: table;
 }
 
+.hover-zoom {
+    height: 282px;
+    overflow: hidden;
+}
+
+.hover-zoom img {
+    transition: transform .5s ease;
+}
+.hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+
+
+/*
+LEGACY CODE
+
+**** CANT THIS BE SIMPLE? ****
+
+
+.img-split {
+    width: 500px;
+}
+
+
+.img-haven {
+    width: 500px;
+    height: 282px;
+}
+
+.img-bind{
+    width:500px;
+    padding-left: 25px;
+    padding-right: 25px;
+} 
 .haven-hover-zoom {
     height: 282px;
     overflow: hidden;
@@ -129,28 +164,7 @@ h1 {
 .split-hover-zoom:hover img {
     transform: scale(1.5);
 }
-
-/*
-LEGACY CODE
-
-**** CANT THIS BE SIMPLE? ****
-
-
-.img-split {
-    width: 500px;
-}
-
-
-.img-haven {
-    width: 500px;
-    height: 282px;
-}
-
-.img-bind{
-    width:500px;
-    padding-left: 25px;
-    padding-right: 25px;
-} */
+*/
 
 
 
