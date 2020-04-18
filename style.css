@@ -34,11 +34,28 @@ h1 {
     color:white;
 }
 .container {
+    margin-left: 75px;
+    margin-right: 75px;
     position: relative;
     text-align: center;
     color: white;
 }
 
+.container1 {
+    margin-left: 75px;
+    margin-right: 75px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.container2 {
+    margin-left: 75px;
+    margin-right: 75px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
 .mapTxt {
     position: absolute;
@@ -63,6 +80,44 @@ h1 {
     display: table;
 }
 
+.haven-hover-zoom {
+    height: 282px;
+    overflow: hidden;
+}
+
+.haven-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.haven-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+.bind-hover-zoom {
+    height: 282px;
+    overflow: hidden;
+}
+
+.bind-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.bind-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+.split-hover-zoom {
+    height: 282px;
+    overflow: hidden;
+}
+
+.split-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.split-hover-zoom:hover img {
+    transform: scale(1.5);
+}
 
 /*
 LEGACY CODE
