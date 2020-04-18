@@ -1,9 +1,24 @@
-body {
+
+.backgroundMain {
     background-image: url(images/valorant\ wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.backgroundHaven {
+    background-image: url(images/valorant\ haven.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgroundBind {
+    background-image: url(images/valorant\ Bind.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgroundSplit {
+    background-image: url(images/Valorant\ Split.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 main {
     padding-top: 150px;
     text-align: center;
@@ -38,7 +53,10 @@ h1 {
     float: left;
     width: 33.333333%;
 }
-
+.halfColumn{
+    float: left;
+    width: 50%;
+}
 .row::after {
     content: "";
     clear: both;
@@ -75,7 +93,10 @@ LEGACY CODE
     height: 280px;
 
 }
-
+.spacing {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 .header {
     height: 60px;
     margin: 30px;
@@ -100,6 +121,7 @@ LEGACY CODE
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 40px;
 }
 
 .topHeader {

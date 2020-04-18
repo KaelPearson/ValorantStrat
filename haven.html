@@ -1,30 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html class="backgroundHaven">
    <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="stratDecide.js"></script>
+        <script>var mapName = "haven";</script>
         <title>Haven strat roulette</title>
 
    </head>
 
+   <body>
+      <div class="header"> <p id="stratText"></p></div>
+      <div class="center">
+         <button class="button" onclick="getStrat(mapName, 'attack')">Attack</button>
+         
+         <button class="button" onclick="getStrat(mapName, 'defence')">Defence</button>
+      </div>
 
+      <div class="spacing"> <div>
 
+      <div class="row">
 
+         <div class="halfColumn">
+             <div class="container">
+                 <a href="bind.html">
+                     <img class = "img-map" src="images/valorant Bind.jpg" alt="Valorant Bind">
+                 </a>
+                 <a class="imageButtonText" href="bind.html">
+                     <div class="mapTxt">Bind</div>
+                 </a>
+             </div> 
+         </div>
 
+         <div class="halfColumn">
+             <div class="container">
+                 <a href="split.html">
+                     <img class= "img-map" src="images/Valorant Split.jpg" alt="Valorant Split">
+                 </a>
+                 <a class="imageButtonText" href="split.html">
+                     <div class="mapTxt">Split</div>
+                 </a>
+             </div>
+         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+     </div>
 
 
 
