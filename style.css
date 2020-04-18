@@ -1,7 +1,7 @@
 body {
     background-image: url(images/valorant\ wallpaper.jpg);
     background-repeat: no-repeat;
-    background-size: stretch;
+    background-size: cover;
 }
 
 main {
