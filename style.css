@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    padding-top: 225px;
+    padding-top: 150px;
     text-align: center;
 }
 
@@ -18,11 +18,14 @@ h1 {
 
 .img-split {
     width: 500px;
+    padding-left: 15px;
 }
+
 
 .img-haven {
     width: 500px;
     height: 282px;
+    padding-right: 15px;
 }
 
 .img-bind{
