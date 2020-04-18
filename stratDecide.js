@@ -69,6 +69,9 @@ function getStrat(map, side){
 
 
 /*
+
+LEGACY CODE 
+
 function testMapName(mapName){
     for(var i = 0; i < mapNames.length; i++){
         if(mapName == mapNames[i]){
