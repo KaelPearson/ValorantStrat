@@ -51,5 +51,5 @@ Can only plant spike in last 10 seconds
 
 
 - Universal Both -
-
+Can not use abilites the entire round
 Can only walk the enitre round
