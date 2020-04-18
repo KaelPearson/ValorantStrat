@@ -16,20 +16,43 @@ h1 {
     font-size: 50px;
 }
 
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.haventxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .img-split {
     width: 500px;
-    padding-left: 15px;
 }
 
 
 .img-haven {
     width: 500px;
     height: 282px;
-    padding-right: 15px;
 }
 
 .img-bind{
     width:500px;
-    padding-left: 25px;
-    padding-right: 25px;
 }
