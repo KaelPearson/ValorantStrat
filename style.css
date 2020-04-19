@@ -130,11 +130,18 @@ h1 {
     line-height: 60px;
     vertical-align: middle;
     text-align: center;
-    background: black;
-    color: rebeccapurple;
-    font-size: 30px;
+    color: white;
+    font-size: 64px;
 }
-
+.lowerHeader {
+    height: 60px;
+    margin: 30px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    color: blue;
+    font-size: 32px;
+}
 
 
 .button1 {
