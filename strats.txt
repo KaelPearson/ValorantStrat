@@ -1,7 +1,7 @@
 Haven
-
-    Everyone must buy shortys, all their abilites and rush sewers using everything they have
-
+    
+    (Shorty Short) Everyone must buy shortys, all their abilites and rush A Short using everything they have
+    
 - Attack -
     
 
@@ -9,6 +9,7 @@ Haven
 
 
 - Defend - 
+    (Haven Heaven) One player must dedicate themselves to heaven if they die someone must replace them they may only move once the bomb has been planted
 
 
 

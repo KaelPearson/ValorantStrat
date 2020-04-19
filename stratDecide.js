@@ -1,18 +1,25 @@
-var havenAttackStrat = ["rush b","rush a"];
-var havenDefenceStrat = ["",""];
+var havenAttackStrat = ["havenattack1","havenattack2"];
+var havenDefenceStrat = ["havendef1","havendef2"];
+var havenStrat = ["havenuni1","havenuni2"];
 
 var bindAttackStrat = ["binda","bindb"];
 var bindDefenceStrat = ["",""];
+var bindStrat = ["",""];
 
 var splitAttackStrat = ["",""];
 var splitDefenceStrat = ["",""];
+var splitStrat = ["",""];
+
+var universalAttack = ["uniattack1","uniattack2"];
+var universalDefence = ["unidef1","unidef2"];
+var universalBoth = ["both","both2"];
 
 class Map{
 
-    constructor(mapName, attackStrat, defenceStrat){
+    constructor(mapName, attackStrat, defenceStrat, mapStrat){
         this.mapName = mapName;
-        this.attackStrat = attackStrat;
-        this.defenceStrat = defenceStrat;
+        this.attackStrat = attackStrat.concat(universalAttack.concat(universalBoth.concat(mapStrat)));
+        this.defenceStrat = defenceStrat.concat(universalDefence.concat(universalBoth.concat(mapStrat)));
     }
     getMapName(){
         return this.mapName;
@@ -26,9 +33,9 @@ class Map{
 }
 
 
-const haven = new Map("haven", havenAttackStrat, havenDefenceStrat);
-const bind = new Map("bind", bindAttackStrat, bindDefenceStrat);
-const split = new Map("split", splitAttackStrat, splitDefenceStrat);
+const haven = new Map("haven", havenAttackStrat, havenDefenceStrat, havenStrat);
+const bind = new Map("bind", bindAttackStrat, bindDefenceStrat, bindStrat);
+const split = new Map("split", splitAttackStrat, splitDefenceStrat, splitStrat);
 
 var sides = ["attack","defence","both"];
 
