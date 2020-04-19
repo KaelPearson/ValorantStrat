@@ -167,6 +167,8 @@ h1 {
 
 .button1 {
     color: #494949;
+    height: 120px;
+    width: 300px;
     text-transform: uppercase;
     text-decoration: none;
     background: #ffffff;
