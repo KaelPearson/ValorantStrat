@@ -71,6 +71,10 @@ h1 {
     float: left;
     width: 50%;
 }
+.row {
+    background-color: black;
+    border: solid 5px black;
+}
 .row::after {
     content: "";
     clear: both;
