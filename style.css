@@ -23,7 +23,7 @@ main {
     padding-top: 150px;
     text-align: center;
 }
-footer{
+.footerText{
     position: fixed;
     left: 0;
     bottom: 0;
@@ -36,6 +36,14 @@ h1 {
     text-align: center;
     font-family: monospace;
     font-size: 50px;
+}
+.alignRightFoot {
+    text-align: right;
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    color: lightgreen;
+    font-size: 18px;
 }
 .imageButtonText {
     color:white;
@@ -120,7 +128,7 @@ h1 {
 }
 
 .button {
-    background-color: blueviolet; /* Green */
+    background-color: blueviolet; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -149,7 +157,9 @@ h1 {
     color: blue;
     font-size: 32px;
 }
-
+.footerLink {
+    color: lightgreen;
+}
 
 .button1 {
     color: #494949;
