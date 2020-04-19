@@ -180,6 +180,6 @@ h1 {
 .button1:hover {
     color: #ffffff ;
     background: purple;
-    border-color: purple;
+    border-color: 4px solid #494949;
     transition: all 0.4s ease 0s;
 }
