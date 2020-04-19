@@ -23,7 +23,14 @@ main {
     padding-top: 150px;
     text-align: center;
 }
-
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    color: lightgreen;
+    font-size: 18px;
+}
 h1 {
     padding-top: 75px;
     text-align: center;
