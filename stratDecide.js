@@ -15,7 +15,6 @@ var universalDefence = ["unidef1","unidef2"];
 var universalBoth = ["both","both2"];
 
 class Map{
-
     constructor(mapName, attackStrat, defenceStrat, mapStrat){
         this.mapName = mapName;
         this.attackStrat = attackStrat.concat(universalAttack.concat(universalBoth.concat(mapStrat)));
@@ -28,54 +27,37 @@ class Map{
         return this.attackStrat;
     }
     getRandomAttackStrat(){
-
+        var rand = Math.floor(Math.random() * this.attackStrat.length);
+        return this.attackStrat[rand];
     }
     getDefenceStrat(){
         return this.defenceStrat;
     }
     getRandomDefenceStrat(){
-        
+        var rand = Math.floor(Math.random() * this.defenceStrat.length);
+        return this.defenceStrat[rand];
+    }
+    getStrat(side){
+        if(side == "attack"){
+            return this.getRandomAttackStrat();
+        } else {
+            return this.getRandomDefenceStrat();
+        }
     }
 }
-
 
 const haven = new Map("haven", havenAttackStrat, havenDefenceStrat, havenStrat);
 const bind = new Map("bind", bindAttackStrat, bindDefenceStrat, bindStrat);
 const split = new Map("split", splitAttackStrat, splitDefenceStrat, splitStrat);
 
-var sides = ["attack","defence","both"];
-
 function getStrat(map, side){
-    var rand;
     var strat;
     if(map == "haven"){
-        if(side == "attack"){
-            rand = Math.floor(Math.random() * haven.getAttackStrat().length);
-            strat = haven.getAttackStrat()[rand];
-        } else {
-            rand = Math.floor(Math.random() * haven.getDefenceStrat().length);
-            strat = haven.getDefenceStrat()[rand];
-
-        }
+        strat = haven.getStrat(side);
     } else if (map == "bind"){
-        if(side == "attack"){
-            rand = Math.floor(Math.random() * bind.getAttackStrat().length);
-            strat = bind.getAttackStrat()[rand];
-
-        } else {
-            rand = Math.floor(Math.random() * bind.getDefenceStrat().length);
-            strat = bind.getDefenceStrat()[rand];
-
-        }
+        strat = bind.getStrat(side);
     } else if (map == "split"){
-        if(side == "attack"){
-            rand = Math.floor(Math.random() * split.getAttackStrat().length);
-            strat = split.getAttackStrat()[rand];
-
-        } else {
-            rand = Math.floor(Math.random() * split.getDefenceStrat().length);
-            strat = split.getDefenceStrat()[rand];
-        }
+        strat = split.getStrat(side);
     } else {
         return;
     }
