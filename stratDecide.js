@@ -27,8 +27,14 @@ class Map{
     getAttackStrat(){
         return this.attackStrat;
     }
+    getRandomAttackStrat(){
+
+    }
     getDefenceStrat(){
         return this.defenceStrat;
+    }
+    getRandomDefenceStrat(){
+        
     }
 }
 
@@ -45,78 +51,33 @@ function getStrat(map, side){
     if(map == "haven"){
         if(side == "attack"){
             rand = Math.floor(Math.random() * haven.getAttackStrat().length);
-            document.getElementById("stratText").innerHTML = haven.getAttackStrat()[rand];
+            strat = haven.getAttackStrat()[rand];
         } else {
             rand = Math.floor(Math.random() * haven.getDefenceStrat().length);
-            document.getElementById("stratText").innerHTML = haven.getDefenceStrat()[rand];
+            strat = haven.getDefenceStrat()[rand];
 
         }
     } else if (map == "bind"){
         if(side == "attack"){
             rand = Math.floor(Math.random() * bind.getAttackStrat().length);
-            document.getElementById("stratText").innerHTML = bind.getAttackStrat()[rand];
+            strat = bind.getAttackStrat()[rand];
 
         } else {
             rand = Math.floor(Math.random() * bind.getDefenceStrat().length);
-            document.getElementById("stratText").innerHTML = bind.getDefenceStrat()[rand];
+            strat = bind.getDefenceStrat()[rand];
 
         }
     } else if (map == "split"){
         if(side == "attack"){
             rand = Math.floor(Math.random() * split.getAttackStrat().length);
-            document.getElementById("stratText").innerHTML = split.getAttackStrat()[rand];
+            strat = split.getAttackStrat()[rand];
 
         } else {
             rand = Math.floor(Math.random() * split.getDefenceStrat().length);
-            document.getElementById("stratText").innerHTML = split.getDefenceStrat()[rand];
+            strat = split.getDefenceStrat()[rand];
         }
+    } else {
+        return;
     }
+    document.getElementById("stratText").innerHTML = strat;
 }
-
-
-/*
-
-LEGACY CODE 
-
-function testMapName(mapName){
-    for(var i = 0; i < mapNames.length; i++){
-        if(mapName == mapNames[i]){
-            return true;
-        }
-    }
-    return false;
-}
-function testSideName(sideName){
-    for(var i = 0; i < sides.length; i++){
-        if(sideName == sides[i]){
-            return true;
-        }
-    }
-    return false;
-}
-
-function decideStrat(mapName, sideName){
-    if(testMapName(mapName) == true && testSideName(sideName) == true){
-        var rand;
-        var strat = "";
-        if(sideName == sides[0]){
-            // Uni Attack
-            rand = Math.floor(Math.random() * attackStrats.length);
-            strat = attackStrats[rand];
-            
-        } else if(sideName = sides[1]){
-            // Uni Defence 
-            rand = Math.floor(Math.random() * defenceStrats.length);
-            strat = defenceStrats[rand];
-
-        } else {
-            // Uni Both
-            rand = Math.floor(Math.random() * bothStrats.length);
-            strat = bothStrats[rand];
-
-        }
-        document.getElementById("stratPara").innerHTML = strat;
-    }
-}
-
-*/
