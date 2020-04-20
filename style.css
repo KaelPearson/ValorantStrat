@@ -116,18 +116,47 @@ h1 {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.header {
-    height: 60px;
-    margin: 30px;
-    line-height: 60px;
-    vertical-align: middle;
+
+.inputText {
+    height: 120px;
     text-align: center;
     background: black;
     color: white;
     font-size: 30px;
 }
+.lowerText {
+    padding-top: 15px;
+}
+.upperText {
+    font-size: 48px;
+}
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: lightgreen;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .header a.logo {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .header a:hover {
+    background-color: darkviolet;
+  }
+  .header-right {
+    float: right;
+  }
+
 .center {
-    padding-top: 20px;
     text-align: center;
 }
 
