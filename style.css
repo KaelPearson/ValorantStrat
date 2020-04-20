@@ -155,7 +155,18 @@ h1 {
   .header-right {
     float: right;
   }
-
+.rightHeader {
+    float: left;
+    overflow: hidden;
+    padding: 20px;
+    color: lightgreen;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 25px;
+    border-radius: 4px;
+}
 .center {
     text-align: center;
 }
