@@ -1,0 +1,15 @@
+# mod_rewrite starts here
+
+RewriteEngine on
+
+# does not apply to existing diretories, meaning that if the folder exists on the server then dont change anything
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# check for file in direction with .html
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Here we actually show the page that has .html
+
+RewriteRule ^(.*)$ $1.html [NC,L]
