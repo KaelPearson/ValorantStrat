@@ -1,22 +1,100 @@
-var havenAttackStrat = ["havenattack1","havenattack2"];
-var havenDefenceStrat = ["havendef1","havendef2"];
-var havenStrat = ["havenuni1","havenuni2"];
-var havenTeamComp = ["HavenTeam1","HavenTeam2"];
+class Strat {
+    constructor(title, detail){
+        this.title = title;
+        this.detail = detail;
+    }
+    getTitle(){
+        return this.title;
+    }
+    getDetail(){
+        return this.detail;
+    }
+}
 
-var bindAttackStrat = ["binda","bindb"];
-var bindDefenceStrat = ["",""];
-var bindStrat = ["",""];
-var bindTeamComp = ["BindTeam1","BindTeam2"];
+/* 
 
-var splitAttackStrat = ["",""];
-var splitDefenceStrat = ["",""];
-var splitStrat = ["",""];
-var splitTeamComp = ["SplitTeam1","SplitTeam2"];
+    ----Haven Start----
 
-var universalAttack = ["uniattack1","uniattack2"];
-var universalDefence = ["unidef1","unidef2"];
-var universalBoth = ["both","both2"];
-var universalTeamComp = ["uniTeam1","uniTeam2"];
+*/
+
+const shortyShort = new Strat("Shorty Short", "Entire team must buy shortys and rush A Short using every ability you have to secure A Short.");
+const heavenHaven = new Strat("Heaven Haven", "One member of your team must hold heaven till the bomb is planted. If they die someone must take their place.")
+const havenAttackTest = new Strat("havenAttackTest", "Lorem ipsum");
+
+var havenAttackStrat = [havenAttackTest];
+var havenDefenceStrat = [heavenHaven];
+var havenStrat = [shortyShort];
+
+
+const havenTeamTest = new Strat("HavenTeam", "Haven Team");
+var havenTeamComp = [havenTeamTest];
+
+/* 
+
+    ----Haven End---- 
+    ------------------
+    ----Bind Start----
+
+*/
+
+const bindAttackTest = new Strat("bindAttackTest", "Lorem ipsum");
+const bindDefenceTest = new Strat("bindDefenceTest", "Lorem ipsum");
+const bindStratTest = new Strat("bindUniversalTest", "Lorem ipsum");
+
+
+var bindAttackStrat = [bindAttackTest];
+var bindDefenceStrat = [bindDefenceTest];
+var bindStrat = [bindStratTest];
+
+
+const bindTeamTest = new Strat("BindTeam", "Bind Team");
+var bindTeamComp = [bindTeamTest];
+
+/* 
+
+    ----Bind End---- 
+    ------------------
+    ----Split Start----
+
+*/
+
+const splitAttackTest = new Strat("splitAttackTest", "Lorem ipsum");
+const splitDefenceTest = new Strat("splitDefenceTest", "Lorem ipsum");
+const splitStratTest = new Strat("splitUniversalTest", "Lorem ipsum");
+
+var splitAttackStrat = [splitAttackTest];
+var splitDefenceStrat = [splitDefenceTest];
+var splitStrat = [splitStratTest];
+
+
+const splitTeamTest = new Strat("SplitTeam", "Split Team");
+var splitTeamComp = [splitTeamTest];
+
+/* 
+
+    ----Split End---- 
+    ------------------
+    ----Universal Start----
+
+*/
+
+const universalAttackTest = new Strat("universalAttackTest", "Lorem ipsum");
+const universalDefenceTest = new Strat("universalDefenceTest", "Lorem ipsum");
+const universalStratTest = new Strat("universalUniversalTest", "Lorem ipsum");
+
+var universalAttack = [universalAttackTest];
+var universalDefence = [universalDefenceTest];
+var universalBoth = [universalStratTest];
+
+
+const universalTeamTest = new Strat("universalTeam", "universal Team");
+var universalTeamComp = [universalTeamTest];
+
+/* 
+
+    ----Universal End----
+
+*/
 
 class Map{
     constructor(mapName, attackStrat, defenceStrat, mapStrat, mapTeamComp){
@@ -70,7 +148,10 @@ function getCharacter(map){
     } else {
         return;
     }
-    document.getElementById("stratText").innerHTML = characterSelect;
+    var characterSelectTitle = characterSelect.getTitle();
+    var characterSelectDetail = characterSelect.getDetail();
+    document.getElementById("stratTitle").innerHTML = characterSelectTitle;
+    document.getElementById("stratText").innerHTML = characterSelectDetail;
 }
 function getStrat(map, side){
     var strat;
@@ -83,5 +164,8 @@ function getStrat(map, side){
     } else {
         return;
     }
-    document.getElementById("stratText").innerHTML = strat;
+    var stratTitle = strat.getTitle();
+    var stratDetail = strat.getDetail();
+    document.getElementById("stratTitle").innerHTML = stratTitle;
+    document.getElementById("stratText").innerHTML = stratDetail;
 }
