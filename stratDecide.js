@@ -17,16 +17,25 @@ class Strat {
 
 */
 
-const shortyShort = new Strat("Shorty Short", "Entire team must buy shortys and rush A Short using every ability you have to secure A Short.");
-const heavenHaven = new Strat("Heaven Haven", "One member of your team must hold heaven till the bomb is planted. If they die someone must take their place.")
+// Haven Attack
 const havenAttackTest = new Strat("havenAttackTest", "Lorem ipsum");
 
+// Haven Defence
+const heavenHaven = new Strat("Heaven Haven", "One member of your team must hold heaven till the bomb is planted. If they die someone must take their place.")
+
+// Haven Both
+const shortyShort = new Strat("Shorty Short", "Entire team must buy shortys and rush A Short using every ability you have to secure A Short.");
+
+
+// Haven Strat Lists
 var havenAttackStrat = [havenAttackTest];
 var havenDefenceStrat = [heavenHaven];
 var havenStrat = [shortyShort];
 
-
+// Haven Team Comps
 const havenTeamTest = new Strat("HavenTeam", "Haven Team");
+
+// Haven Team Comp List
 var havenTeamComp = [havenTeamTest];
 
 /* 
@@ -37,17 +46,24 @@ var havenTeamComp = [havenTeamTest];
 
 */
 
+// Bind Attack
 const bindAttackTest = new Strat("bindAttackTest", "Lorem ipsum");
+
+// Bind Defence
 const bindDefenceTest = new Strat("bindDefenceTest", "Lorem ipsum");
+
+// Bind Both
 const bindStratTest = new Strat("bindUniversalTest", "Lorem ipsum");
 
-
+// Bind Strat Lists
 var bindAttackStrat = [bindAttackTest];
 var bindDefenceStrat = [bindDefenceTest];
 var bindStrat = [bindStratTest];
 
-
+// Bind Team Comps
 const bindTeamTest = new Strat("BindTeam", "Bind Team");
+
+// Bind Team Comp List
 var bindTeamComp = [bindTeamTest];
 
 /* 
@@ -58,16 +74,24 @@ var bindTeamComp = [bindTeamTest];
 
 */
 
+// Split Attack 
 const splitAttackTest = new Strat("splitAttackTest", "Lorem ipsum");
+
+// Split Defence 
 const splitDefenceTest = new Strat("splitDefenceTest", "Lorem ipsum");
+
+// Split Both
 const splitStratTest = new Strat("splitUniversalTest", "Lorem ipsum");
 
+// Split Strat Lists
 var splitAttackStrat = [splitAttackTest];
 var splitDefenceStrat = [splitDefenceTest];
 var splitStrat = [splitStratTest];
 
-
+// Split Team Comps
 const splitTeamTest = new Strat("SplitTeam", "Split Team");
+
+// Split Team Comp List
 var splitTeamComp = [splitTeamTest];
 
 /* 
@@ -78,16 +102,24 @@ var splitTeamComp = [splitTeamTest];
 
 */
 
-const universalAttackTest = new Strat("universalAttackTest", "Lorem ipsum");
+// Universal Attack
+const lastTwentySeconds = new Strat("The only need 20", "Your team must wait till the last 20 seconds before attacking a site.");
+
+// Universal Defence
 const universalDefenceTest = new Strat("universalDefenceTest", "Lorem ipsum");
-const universalStratTest = new Strat("universalUniversalTest", "Lorem ipsum");
 
-var universalAttack = [universalAttackTest];
+// Universal Both
+const unheard = new Strat("The unheard", "Your team may only use silenced weapons, walk and you are not allowed to speak in voice chat");
+
+// Universal Strat Lists
+var universalAttack = [lastTwentySeconds];
 var universalDefence = [universalDefenceTest];
-var universalBoth = [universalStratTest];
+var universalBoth = [unheard];
 
-
+// Universal Team Comps
 const universalTeamTest = new Strat("universalTeam", "universal Team");
+
+// Universal Team Comp List
 var universalTeamComp = [universalTeamTest];
 
 /* 
