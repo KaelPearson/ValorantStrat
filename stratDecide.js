@@ -101,6 +101,7 @@ const spikeTag = new Strat("Spike tag", "The person with the spike is IT and eve
 const motivation = new Strat("Hype it up", "Everyone must rush a site as fast as possible while one player gives a motivational speech");
 const jumpCorners = new Strat('"I feel more accurate"', "Everyone must jump around corners");
 const mrPres = new Strat("GET DOWN MR. PRESIDENT!", "One player becomes the president they can only hold the spike and the other 4 players must defend him. The president cannot shoot till the bomb is down and if the president dies everyone must drop their gun and retreat");
+const supressiveFire = new Strat("SUPRESSIVE FIRE!!", "everyone must by armour and Odins, rush a site while shouting 'Supressive Fire!!'");
 
 // Universal Defence
 const theFullStack = new Strat("The full stack", "Your team must choose one site that everyone must hold. You may not leave till a bomb is planted on another site");
@@ -119,7 +120,7 @@ const teammateChooseGuns = new Strat("This is my favourite! Thank you!", "Everyo
 const potLuckGuns = new Strat("Pot Luck Special","Everyone must buy a gun and throw it in a pile once everyone has put in a gun count down to 3 and run in");
 
 // Universal Strat Lists
-var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres];
+var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, supressiveFire];
 var universalDefence = [theFullStack, noBackTracking];
 var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
     teammateChooseGuns, potLuckGuns
