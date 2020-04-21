@@ -169,6 +169,13 @@ const haven = new Map("haven", havenAttackStrat, havenDefenceStrat, havenStrat, 
 const bind = new Map("bind", bindAttackStrat, bindDefenceStrat, bindStrat, bindTeamComp);
 const split = new Map("split", splitAttackStrat, splitDefenceStrat, splitStrat, splitTeamComp);
 
+function displayStrat(strat){
+    var stratTitle = strat.getTitle();
+    var stratDetail = strat.getDetail();
+    document.getElementById("stratTitle").innerHTML = stratTitle;
+    document.getElementById("stratText").innerHTML = stratDetail;
+}
+
 function getCharacter(map){
     var characterSelect;
     if(map == "haven"){
@@ -180,11 +187,9 @@ function getCharacter(map){
     } else {
         return;
     }
-    var characterSelectTitle = characterSelect.getTitle();
-    var characterSelectDetail = characterSelect.getDetail();
-    document.getElementById("stratTitle").innerHTML = characterSelectTitle;
-    document.getElementById("stratText").innerHTML = characterSelectDetail;
+    displayStrat(characterSelect);
 }
+
 function getStrat(map, side){
     var strat;
     if(map == "haven"){
@@ -196,8 +201,5 @@ function getStrat(map, side){
     } else {
         return;
     }
-    var stratTitle = strat.getTitle();
-    var stratDetail = strat.getDetail();
-    document.getElementById("stratTitle").innerHTML = stratTitle;
-    document.getElementById("stratText").innerHTML = stratDetail;
+    displayStrat(strat);
 }
