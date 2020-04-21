@@ -125,16 +125,19 @@ var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWal
 ];
 
 // Universal Team Comps
-const womenTeam = new Strat("Power to women", "All women + Sova (long hair)");
-
+const womenTeam = new Strat("Power to women", "All women and Sova (long hair)");
+const slowAndThrow = new Strat("Slow and throw", "Sage, Viper, Pheonix, Raze and Brimstone");
+const sneakyBeaky = new Strat("Sneaky Beaky", "Viper, Omen, Brimstone, Cypher and Jett");
 // Universal Team Comp List
-var universalTeamComp = [womenTeam];
+var universalTeamComp = [womenTeam, slowAndThrow, sneakyBeaky];
 
 /* 
 
     ----Universal End----
 
 */
+
+const characterList = ["Phoenix","Breach","Brimstone","Cypher","Jett","Omen","Raze","Sage","Sova","Viper"];
 
 class Map{
     constructor(mapName, attackStrat, defenceStrat, mapStrat, mapTeamComp){
@@ -168,7 +171,20 @@ class Map{
         }
     }
     getTeamComp(){
-        var rand = Math.floor(Math.random() * this.teamComp.length);
+        var rand = Math.floor(Math.random() * (this.teamComp.length + 1));
+        if(this.teamComp.length == rand){
+            var currList = [];
+            randomCharacter(characterList, currList);
+            var string = "";
+            for(var i = 0; i < 5; i++){
+                string += list[i];
+                if(i != 4){
+                    string += ", ";
+                }
+            } 
+            const randCharStrat = new Strat("Random List", string);
+            return randCharStrat;
+        }
         return this.teamComp[rand];
     }
 }
@@ -210,4 +226,24 @@ function getStrat(map, side){
         return;
     }
     displayStrat(strat);
+}
+var list;
+function randomCharacter(charList, currList){
+    var rand = Math.floor(Math.random() * charList.length);
+    currList.push(charList[rand]);
+    var newList = [];
+    if(currList.length >= 5){
+        list = currList;
+        return;
+    }
+    for(var i = 0; i < charList.length; i++){
+        if(i != rand){
+            if(i < rand){
+                newList[i] = charList[i];
+            } else {
+                newList[i - 1] = charList[i];
+            }
+        }
+    }
+    randomCharacter(newList, currList);
 }
