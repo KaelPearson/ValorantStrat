@@ -10,7 +10,7 @@ class Strat {
         return this.detail;
     }
 }
-
+var test = 55;
 /* 
 
     ----Haven Start----
