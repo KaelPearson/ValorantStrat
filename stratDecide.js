@@ -81,12 +81,12 @@ const splitAttackTest = new Strat("splitAttackTest", "Lorem ipsum");
 const splitDefenceTest = new Strat("splitDefenceTest", "Lorem ipsum");
 
 // Split Both
-const splitStratTest = new Strat("splitUniversalTest", "Lorem ipsum");
+const noRope = new Strat("No Rope Climb", "Your team are not allowed to use any of the ropes on the map");
 
 // Split Strat Lists
 var splitAttackStrat = [splitAttackTest];
 var splitDefenceStrat = [splitDefenceTest];
-var splitStrat = [splitStratTest];
+var splitStrat = [noRope];
 
 // Split Team Comps
 const splitTeamTest = new Strat("SplitTeam", "Split Team");
@@ -103,18 +103,21 @@ var splitTeamComp = [splitTeamTest];
 */
 
 // Universal Attack
-const lastTwentySeconds = new Strat("The only need 20", "Your team must wait till the last 20 seconds before attacking a site.");
+const lastTwentySeconds = new Strat("The only need 20", "Your team must wait till the last 20 seconds before attacking a site");
+const spikeTag = new Strat("Spike tag", "The person with the spike is IT and everyone must avoid getting the spike from them. If you give someone the bomb you must say Tag! in chat");
 
 // Universal Defence
-const universalDefenceTest = new Strat("universalDefenceTest", "Lorem ipsum");
+const theFullStack = new Strat("The full stack", "Your team must choose one site that everyone must hold. You may not leave till a bomb is planted on another site");
 
 // Universal Both
 const unheard = new Strat("The unheard", "Your team may only use silenced weapons, walk and you are not allowed to speak in voice chat");
+const spawnRun = new Strat("Spawn killers", "After your team gets a kill you must run back to your spawn");
+const backwardsHeadphones = new Strat("From where?", "Everyone must rotate their headsets backwards");
 
 // Universal Strat Lists
-var universalAttack = [lastTwentySeconds];
-var universalDefence = [universalDefenceTest];
-var universalBoth = [unheard];
+var universalAttack = [lastTwentySeconds, spikeTag];
+var universalDefence = [theFullStack];
+var universalBoth = [unheard, spawnRun, backwardsHeadphones];
 
 // Universal Team Comps
 const universalTeamTest = new Strat("universalTeam", "universal Team");
