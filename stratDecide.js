@@ -32,10 +32,9 @@ var havenDefenceStrat = [heavenHaven];
 var havenStrat = [shortyShort];
 
 // Haven Team Comps
-const havenTeamTest = new Strat("HavenTeam", "Haven Team");
 
 // Haven Team Comp List
-var havenTeamComp = [havenTeamTest];
+var havenTeamComp = [];
 
 /* 
 
@@ -59,10 +58,9 @@ var bindDefenceStrat = [teleportRush];
 var bindStrat = [bindRhyme];
 
 // Bind Team Comps
-const bindTeamTest = new Strat("BindTeam", "Bind Team");
 
 // Bind Team Comp List
-var bindTeamComp = [bindTeamTest];
+var bindTeamComp = [];
 
 /* 
 
@@ -85,10 +83,9 @@ var splitDefenceStrat = [];
 var splitStrat = [noRope];
 
 // Split Team Comps
-const splitTeamTest = new Strat("SplitTeam", "Split Team");
 
 // Split Team Comp List
-var splitTeamComp = [splitTeamTest];
+var splitTeamComp = [];
 
 /* 
 
@@ -128,7 +125,7 @@ var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWal
 ];
 
 // Universal Team Comps
-const universalTeamTest = new Strat("universalTeam", "universal Team");
+const universalTeamTest = new Strat("Power to women", "All women + Sova (long hair)");
 
 // Universal Team Comp List
 var universalTeamComp = [universalTeamTest];
