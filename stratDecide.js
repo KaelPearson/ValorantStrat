@@ -101,6 +101,8 @@ const spikeTag = new Strat("Spike tag", "The person with the spike is IT and eve
 const motivation = new Strat("Hype it up", "Everyone must rush a site as fast as possible while one player gives a motivational speech");
 const jumpCorners = new Strat('"I feel more accurate"', "Everyone must jump around corners");
 const mrPres = new Strat("GET DOWN MR. PRESIDENT!", "One player becomes the president they can only hold the spike and the other 4 players must defend him. The president cannot shoot till the bomb is down and if the president dies everyone must drop their gun and retreat");
+const backsTogether = new Strat("We see all","Everyone in your group must put your backs together while moving around. You are not allowed to see another teammate");
+const raidBoss = new Strat("Raid Boss", "You must choose one player to become the Raid Boss he must get a odin and armour if he can not afford it the person with the most money must drop a weapon for him. He then must run into a site and your team must choose to either all follow him or not follow him at all ");
 
 // Universal Defence
 const theFullStack = new Strat("The full stack", "Your team must choose one site that everyone must hold. You may not leave till a bomb is planted on another site");
@@ -117,12 +119,13 @@ const teamSight = new Strat("Trust no one", "You can only move when looking at a
 const noLeftTurns = new Strat("GeT_RiGhT", "You may only move and look right");
 const teammateChooseGuns = new Strat("This is my favourite! Thank you!", "Everyone must buy the gun the person below them on the scoreboard says to buy and you must say thank you (If you are on the bottom choose for the top person)");
 const potLuckGuns = new Strat("Pot Luck Special","Everyone must buy a gun and throw it in a pile once everyone has put in a gun count down to 3 and run in");
+const enemyHunting = new Strat("Enemy Spotted","Once you see an enemy you can not kill anyone else besides them till they are dead");
 
 // Universal Strat Lists
-var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres];
+var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss];
 var universalDefence = [theFullStack, noBackTracking];
 var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
-    teammateChooseGuns, potLuckGuns
+    teammateChooseGuns, potLuckGuns, enemyHunting
 ];
 
 // Universal Team Comps
