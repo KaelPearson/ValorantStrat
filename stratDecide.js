@@ -103,6 +103,7 @@ const jumpCorners = new Strat('"I feel more accurate"', "Everyone must jump arou
 const mrPres = new Strat("GET DOWN MR. PRESIDENT!", "One player becomes the president they can only hold the spike and the other 4 players must defend him. The president cannot shoot till the bomb is down and if the president dies everyone must drop their gun and retreat");
 const backsTogether = new Strat("We see all","Everyone in your group must put your backs together while moving around. You are not allowed to see another teammate");
 const raidBoss = new Strat("Raid Boss", "You must choose one player to become the Raid Boss he must get a odin and armour if he can not afford it the person with the most money must drop a weapon for him. He then must run into a site and your team must choose to either all follow him or not follow him at all ");
+const supressiveFire = new Strat("SUPRESSIVE FIRE!!", "Everyone must by armour and Odins, rush a site while shouting 'Supressive Fire!!'");
 
 // Universal Defence
 const theFullStack = new Strat("The full stack", "Your team must choose one site that everyone must hold. You may not leave till a bomb is planted on another site");
@@ -123,6 +124,7 @@ const enemyHunting = new Strat("Enemy Spotted","Once you see an enemy you can no
 
 // Universal Strat Lists
 var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss];
+var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, supressiveFire];
 var universalDefence = [theFullStack, noBackTracking];
 var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
     teammateChooseGuns, potLuckGuns, enemyHunting
