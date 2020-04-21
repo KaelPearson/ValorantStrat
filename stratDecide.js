@@ -227,6 +227,7 @@ function getStrat(map, side){
     }
     displayStrat(strat);
 }
+
 var list;
 function randomCharacter(charList, currList){
     var rand = Math.floor(Math.random() * charList.length);
