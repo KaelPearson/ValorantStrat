@@ -125,10 +125,10 @@ var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWal
 ];
 
 // Universal Team Comps
-const universalTeamTest = new Strat("Power to women", "All women + Sova (long hair)");
+const womenTeam = new Strat("Power to women", "All women + Sova (long hair)");
 
 // Universal Team Comp List
-var universalTeamComp = [universalTeamTest];
+var universalTeamComp = [womenTeam];
 
 /* 
 
