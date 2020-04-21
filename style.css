@@ -1,25 +1,25 @@
 
 .backgroundMain {
     background-color: black;
-    background-image: url(images/valorant\ wallpaper.jpg);
+    background-image: url(images/valorantwallpaper.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .backgroundHaven {
     background-color: black;
-    background-image: url(images/valorant\ haven.png);
+    background-image: url(images/valoranthaven.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .backgroundBind {
     background-color: black;
-    background-image: url(images/valorant\ Bind.jpg);
+    background-image: url(images/valorantBind.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .backgroundSplit {
     background-color: black;
-    background-image: url(images/Valorant\ Split.jpg);
+    background-image: url(images/ValorantSplit.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
