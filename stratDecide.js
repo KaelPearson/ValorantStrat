@@ -121,6 +121,7 @@ const noLeftTurns = new Strat("GeT_RiGhT", "You may only move and look right");
 const teammateChooseGuns = new Strat("This is my favourite! Thank you!", "Everyone must buy the gun the person below them on the scoreboard says to buy and you must say thank you (If you are on the bottom choose for the top person)");
 const potLuckGuns = new Strat("Pot Luck Special","Everyone must buy a gun and throw it in a pile once everyone has put in a gun count down to 3 and run in");
 const enemyHunting = new Strat("Enemy Spotted","Once you see an enemy you can not kill anyone else besides them till they are dead");
+const myGunNow = new Strat("My Gun Now", "After you kill an enemy, you must pick up their gun and use their gun to kill the next enemy, you may not kill anyone until you pick up their gun first.")
 
 // Universal Strat Lists
 var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss];
