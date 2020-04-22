@@ -128,7 +128,6 @@ const myGunNow = new Strat("My Gun Now", "After you kill an enemy, you must pick
 
 // Universal Strat Lists
 var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss, supressiveFire, oneAtATime, whoForgotSpike];
-var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres];
 var universalDefence = [theFullStack, noBackTracking, sittingDuck];
 var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
     teammateChooseGuns, potLuckGuns, enemyHunting, myGunNow];
