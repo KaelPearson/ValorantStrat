@@ -103,11 +103,14 @@ const jumpCorners = new Strat('"I feel more accurate"', "Everyone must jump arou
 const mrPres = new Strat("GET DOWN MR. PRESIDENT!", "One player becomes the president they can only hold the spike and the other 4 players must defend him. The president cannot shoot till the bomb is down and if the president dies everyone must drop their gun and retreat");
 const backsTogether = new Strat("We see all","Everyone in your group must put your backs together while moving around. You are not allowed to see another teammate");
 const raidBoss = new Strat("Raid Boss", "You must choose one player to become the Raid Boss he must get a odin and armour if he can not afford it the person with the most money must drop a weapon for him. He then must run into a site and your team must choose to either all follow him or not follow him at all ");
-const supressiveFire = new Strat("SUPRESSIVE FIRE!!", "Everyone must by armour and Odins, rush a site while shouting 'Supressive Fire!!'");
+const supressiveFire = new Strat("SUPRESSIVE FIRE!!", "Everyone must by armour and Odins, rush a site while shouting 'Supressive Fire!!' while holding down mouse_1");
+const oneAtATime = new Strat("One At A Time", "Pick a bomb site, and only 1 teammate is allowed to push the site, once they either reach the bombsite or is killed, the next one can advance");
+const whoForgotSpike = new Strat("Who Forgot Spike?", "at the beginning of the round, leave spike at spawn, proceed to take a bombsite, once the bombsite is taken, 1 must return to spawn and retrive the spike and come back to the bombsite");
 
 // Universal Defence
 const theFullStack = new Strat("The full stack", "Your team must choose one site that everyone must hold. You may not leave till a bomb is planted on another site");
 const noBackTracking = new Strat("Never turn back", "You can not go where you have already gone");
+const sittingDuck = new Strat("Sitting Duck", "Before the buy phase ends, pick a spot and stay there until either the round ends or a bomb is planted");
 
 // Universal Both
 const unheard = new Strat("The unheard", "Your team may only use silenced weapons, walk and you are not allowed to speak in voice chat");
@@ -121,15 +124,14 @@ const noLeftTurns = new Strat("GeT_RiGhT", "You may only move and look right");
 const teammateChooseGuns = new Strat("This is my favourite! Thank you!", "Everyone must buy the gun the person below them on the scoreboard says to buy and you must say thank you (If you are on the bottom choose for the top person)");
 const potLuckGuns = new Strat("Pot Luck Special","Everyone must buy a gun and throw it in a pile once everyone has put in a gun count down to 3 and run in");
 const enemyHunting = new Strat("Enemy Spotted","Once you see an enemy you can not kill anyone else besides them till they are dead");
-const myGunNow = new Strat("My Gun Now", "After you kill an enemy, you must pick up their gun and use their gun to kill the next enemy, you may not kill anyone until you pick up their gun first.")
+const myGunNow = new Strat("My Gun Now", "After you kill an enemy, you must pick up their gun and use their gun to kill the next enemy, you may not kill anyone until you pick up their gun first.");
 
 // Universal Strat Lists
-var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss];
-var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, supressiveFire];
-var universalDefence = [theFullStack, noBackTracking];
+var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss, supressiveFire, oneAtATime, whoForgotSpike];
+var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres];
+var universalDefence = [theFullStack, noBackTracking, sittingDuck];
 var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
-    teammateChooseGuns, potLuckGuns, enemyHunting
-];
+    teammateChooseGuns, potLuckGuns, enemyHunting, myGunNow];
 
 // Universal Team Comps
 const womenTeam = new Strat("Power to women", "All women and Sova (long hair)");
