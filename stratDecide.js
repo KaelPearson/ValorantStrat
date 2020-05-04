@@ -126,11 +126,16 @@ const potLuckGuns = new Strat("Pot Luck Special","Everyone must buy a gun and th
 const enemyHunting = new Strat("Enemy Spotted","Once you see an enemy you can not kill anyone else besides them till they are dead");
 const myGunNow = new Strat("My Gun Now", "After you kill an enemy, you must pick up their gun and use their gun to kill the next enemy, you may not kill anyone until you pick up their gun first.");
 
+const shotgunOnly = new Strat("Spread Shot (Thank you for this strat xRevelantx!)", "Only buy shotguns (Shorty, Bucky or Judge)");
+const backwardsMovement = new Strat("Looking behind (Thank you for this strat xRevelantx!)", "You can only walk backwards and are only allowed to turn around when standing still");
+const sockHand = new Strat("Sock (Thank you for this strat xRevelantx!)", "Put a sock over your hand");
+const sensitivityExtreme = new Strat("Can't control this (Thank you for this strat xRevelantx!)","Multiply your sensitivity by 3");
+
 // Universal Strat Lists
 var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss, supressiveFire, oneAtATime, whoForgotSpike];
 var universalDefence = [theFullStack, noBackTracking, sittingDuck];
 var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
-    teammateChooseGuns, potLuckGuns, enemyHunting, myGunNow];
+    teammateChooseGuns, potLuckGuns, enemyHunting, myGunNow, shotgunOnly, backwardsMovement, sockHand, sensitivityExtreme];
 
 // Universal Team Comps
 const womenTeam = new Strat("Power to women", "All women and Sova (long hair)");
