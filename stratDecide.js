@@ -2,6 +2,7 @@ class Strat {
     constructor(title, detail){
         this.title = title;
         this.detail = detail;
+        this.used = false;
     }
     getTitle(){
         return this.title;
@@ -9,8 +10,16 @@ class Strat {
     getDetail(){
         return this.detail;
     }
+    getUsed(){
+        return this.used;
+    }
+    setUsed(bool){
+        this.used = bool;
+    }
 }
+const allDefence = new Strat("You used all Defence strats!", "Click defence again to reuse old ones");
 
+const allAttack = new Strat("You used all attack strats!", "Click attack again to reuse old ones");
 /* 
 
     ----Haven Start----
@@ -166,14 +175,41 @@ class Map{
         return this.attackStrat;
     }
     getRandomAttackStrat(){
-        var rand = Math.floor(Math.random() * this.attackStrat.length);
+        if(this.checkUsedList(this.attackStrat) == true){
+            this.setUnUsedList(this.attackStrat);
+            return allAttack;
+        }
+        do {
+            var rand = Math.floor(Math.random() * this.attackStrat.length);
+        } while(this.attackStrat[rand].getUsed() == true);
+        this.attackStrat[rand].setUsed(true);
         return this.attackStrat[rand];
     }
     getDefenceStrat(){
         return this.defenceStrat;
     }
+    checkUsedList(list){
+        for(var i = 0; i < list.length; i++){
+            if(list[i].getUsed() == false){
+                return false;
+            }
+        }
+        return true;
+    }
+    setUnUsedList(list){
+        for(var i = 0; i < list.length; i++){
+            list[i].setUsed(false);
+        }
+    }
     getRandomDefenceStrat(){
-        var rand = Math.floor(Math.random() * this.defenceStrat.length);
+        if(this.checkUsedList(this.defenceStrat) == true){
+            this.setUnUsedList(this.defenceStrat);
+            return allDefence;
+        }
+        do {
+            var rand = Math.floor(Math.random() * this.defenceStrat.length);
+        } while(this.defenceStrat[rand].getUsed() == true);
+        this.defenceStrat[rand].setUsed(true);
         return this.defenceStrat[rand];
     }
     getStrat(side){
@@ -184,8 +220,7 @@ class Map{
         }
     }
     getTeamComp(){
-        var rand = Math.floor(Math.random() * (this.teamComp.length + 1));
-        if(this.teamComp.length == rand){
+        if(this.checkUsedList(this.teamComp) == true){
             var currList = [];
             randomCharacter(characterList, currList);
             var string = "";
@@ -198,6 +233,11 @@ class Map{
             const randCharStrat = new Strat("Random List", string);
             return randCharStrat;
         }
+        do {
+            var rand = Math.floor(Math.random() * this.teamComp.length);
+        } while(this.teamComp[rand].getUsed() == true);
+        this.teamComp[rand].setUsed(true);
+        console.log(this.teamComp[rand]);
         return this.teamComp[rand];
     }
 }
