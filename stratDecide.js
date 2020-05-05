@@ -148,10 +148,12 @@ var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWal
 
 // Universal Team Comps
 const womenTeam = new Strat("Power to women", "All women and Sova (long hair)");
-const slowAndThrow = new Strat("Slow and throw", "Sage, Viper, Pheonix, Raze and Brimstone");
-const sneakyBeaky = new Strat("Sneaky Beaky", "Viper, Omen, Brimstone, Cypher and Jett");
+const slowAndThrow = new Strat("Slow and throw", "Sage, Viper, Pheonix, Raze and Brimstone. Slow your opponents using Sage ice field and Vipers shot to then throw all your grenades and molotovs");
+const fullSmoke = new Strat("Full Smoke","Brimstone, Omen, Jett, Viper and Cypher. Try to through as many smokes as possible while entering sites");
+const menTeam = new Strat("All Men","Choose any from (Phoenix, Breach, Brimstone, Cypher, Omen and Sova)");
+
 // Universal Team Comp List
-var universalTeamComp = [womenTeam, slowAndThrow, sneakyBeaky];
+var universalTeamComp = [womenTeam, slowAndThrow, fullSmoke, menTeam];
 
 /* 
 
