@@ -170,59 +170,29 @@ class Map{
         this.defenceStrat = defenceStrat.concat(universalDefence.concat(universalBoth.concat(mapStrat)));
         this.teamComp = mapTeamComp.concat(universalTeamComp);
     }
-    getMapName(){
-        return this.mapName;
-    }
-    getAttackStrat(){
-        return this.attackStrat;
-    }
-    getRandomAttackStrat(){
-        if(this.checkUsedList(this.attackStrat) == true){
-            this.setUnUsedList(this.attackStrat);
-            return allAttack;
-        }
-        do {
-            var rand = Math.floor(Math.random() * this.attackStrat.length);
-        } while(this.attackStrat[rand].getUsed() == true);
-        this.attackStrat[rand].setUsed(true);
-        return this.attackStrat[rand];
-    }
-    getDefenceStrat(){
-        return this.defenceStrat;
-    }
-    checkUsedList(list){
-        for(var i = 0; i < list.length; i++){
-            if(list[i].getUsed() == false){
-                return false;
-            }
-        }
-        return true;
-    }
-    setUnUsedList(list){
-        for(var i = 0; i < list.length; i++){
-            list[i].setUsed(false);
-        }
-    }
-    getRandomDefenceStrat(){
-        if(this.checkUsedList(this.defenceStrat) == true){
-            this.setUnUsedList(this.defenceStrat);
-            return allDefence;
-        }
-        do {
-            var rand = Math.floor(Math.random() * this.defenceStrat.length);
-        } while(this.defenceStrat[rand].getUsed() == true);
-        this.defenceStrat[rand].setUsed(true);
-        return this.defenceStrat[rand];
-    }
     getStrat(side){
         if(side == "attack"){
             return this.getRandomAttackStrat();
-        } else {
+        } else if (side == "defence"){
             return this.getRandomDefenceStrat();
+        } else {
+            return this.getTeamComp();
         }
     }
+    getRandomAttackStrat(){
+        if(this.checkUsedList(this.attackStrat, "attack") == true){
+            return allAttack;
+        }
+        return this.getOpenStrats(this.attackStrat);
+    }
+    getRandomDefenceStrat(){
+        if(this.checkUsedList(this.defenceStrat, "defence") == true){
+            return allDefence;
+        }
+        return this.getOpenStrats(this.defenceStrat);
+    }
     getTeamComp(){
-        if(this.checkUsedList(this.teamComp) == true){
+        if(this.checkUsedList(this.teamComp, "team") == true){
             var currList = [];
             randomCharacter(characterList, currList);
             var string = "";
@@ -235,12 +205,31 @@ class Map{
             const randCharStrat = new Strat("Random List", string);
             return randCharStrat;
         }
-        do {
-            var rand = Math.floor(Math.random() * this.teamComp.length);
-        } while(this.teamComp[rand].getUsed() == true);
-        this.teamComp[rand].setUsed(true);
-        console.log(this.teamComp[rand]);
-        return this.teamComp[rand];
+        return this.getOpenStrats(this.teamComp);
+    }
+    checkUsedList(list, side){
+        for(var i = 0; i < list.length; i++){
+            if(list[i].getUsed() == false){
+                return false;
+            }
+        }
+        if(side != "team"){
+            for(var i = 0; i < list.length; i++){
+                list[i].setUsed(false);
+            }
+        }
+        return true;
+    }
+    getOpenStrats(list){
+        let openStrats = [];
+        for(var i = 0; i < list.length; i++){
+            if(list[i].getUsed() == false){
+                openStrats.push(list[i]);
+            }
+        }
+        var rand = Math.floor(Math.random() * openStrats.length);
+        openStrats[rand].setUsed(true);
+        return openStrats[rand];
     }
 }
 
@@ -253,20 +242,6 @@ function displayStrat(strat){
     var stratDetail = strat.getDetail();
     document.getElementById("stratTitle").innerHTML = stratTitle;
     document.getElementById("stratText").innerHTML = stratDetail;
-}
-
-function getCharacter(map){
-    var characterSelect;
-    if(map == "haven"){
-        characterSelect = haven.getTeamComp();
-    } else if (map == "bind"){
-        characterSelect = bind.getTeamComp();
-    } else if (map == "split"){
-        characterSelect = split.getTeamComp();
-    } else {
-        return;
-    }
-    displayStrat(characterSelect);
 }
 
 function getStrat(map, side){
