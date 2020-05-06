@@ -11,6 +11,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.backgroundStratlist {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .backgroundBind {
     background-color: black;
     background-image: url(images/valorantBind.webp);
