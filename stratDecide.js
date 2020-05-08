@@ -33,12 +33,12 @@ const heavenHaven = new Strat("Heaven Haven", "One member of your team must hold
 
 // Haven Both
 const shortyShort = new Strat("Shorty Short", "Entire team must buy shortys and rush A Short using every ability you have to secure A Short.");
-
+const japaneseOnly = new Strat("JapaneseOnly", "You may only speak Japanese")
 
 // Haven Strat Lists
 var havenAttackStrat = [];
 var havenDefenceStrat = [heavenHaven];
-var havenStrat = [shortyShort];
+var havenStrat = [shortyShort, japaneseOnly];
 
 // Haven Team Comps
 
@@ -60,11 +60,11 @@ const teleportRush = new Strat("Teleport madness", "Everyone on your team at the
 
 // Bind Both
 const bindRhyme = new Strat("Bind Find Grind Mind", "Every sentence must include a rhyme with Bind (Heres some examples because im so kind blind, crined, dined, find, fined, grind, hind, kind, lined, mind, mined, pined, rind, shined, signed, tined, twined, vined, wined, wynd)");
-
+const arabicOnly = new Strat("Arabic Only", "You may only speak Arabic");
 // Bind Strat Lists
 var bindAttackStrat = [];
 var bindDefenceStrat = [teleportRush];
-var bindStrat = [bindRhyme];
+var bindStrat = [bindRhyme, arabicOnly];
 
 // Bind Team Comps
 
@@ -85,11 +85,11 @@ var bindTeamComp = [];
 
 // Split Both
 const noRope = new Strat("No Rope Climb", "Your team are not allowed to use any of the ropes on the map");
-
+const englishOnly = new Strat("English Only", "You may only speak English");
 // Split Strat Lists
 var splitAttackStrat = [];
 var splitDefenceStrat = [];
-var splitStrat = [noRope];
+var splitStrat = [noRope, englishOnly];
 
 // Split Team Comps
 
@@ -174,6 +174,7 @@ const theBest = new Strat("YOU'RE AMAZING!", "When someone gets a kill everyone 
 const pause = new Strat("Pause one sec", "The bottom frag types in chat pause(time) and you must sit till that time is met");
 const botGun = new Strat("One gun team", "The bottom fragger chooses a gun and everyone must buy it");
 const hoard = new Strat("Hoarders", "Everytime you see a gun on the ground you must bring it to spawn and make a pile");
+const newLanguage = new Strat("No English", "You may not speak English");
 
 // Universal Strat Lists
 var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss, supressiveFire, oneAtATime, whoForgotSpike, hotPotato, switchSites, oneByOne,
@@ -184,7 +185,7 @@ var universalBoth = [
     unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
     teammateChooseGuns, potLuckGuns, enemyHunting, myGunNow, shotgunOnly, backwardsMovement, sockHand, sensitivityExtreme, onlyOneShot, switchHands, doubleStrat, emptyMags, scoped, noCrosshair,
     formation, bunnyHop, snitch, knifeShoot, leftWall, target, standUp, lying, canada, pushToTalk, scream, redLight, backwardsKeyboard, budget, entireClip, defendYourTeammate, randomGun,
-    lessKeys, anime, mechanic, freeze, theBest, pause, botGun, hoard
+    lessKeys, anime, mechanic, freeze, theBest, pause, botGun, hoard, newLanguage
 ];
 
 // Universal Team Comps
