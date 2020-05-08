@@ -175,6 +175,8 @@ const pause = new Strat("Pause one sec", "The bottom frag types in chat pause(ti
 const botGun = new Strat("One gun team", "The bottom fragger chooses a gun and everyone must buy it");
 const hoard = new Strat("Hoarders", "Everytime you see a gun on the ground you must bring it to spawn and make a pile");
 const newLanguage = new Strat("No English", "You may not speak English");
+const kneeCap = new Strat("Cripple Them!", "You may only shoot kneecaps");
+const abilityPeek = new Strat("Ability Peek!", "Only peak with an ability out");
 
 // Universal Strat Lists
 var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss, supressiveFire, oneAtATime, whoForgotSpike, hotPotato, switchSites, oneByOne,
@@ -185,7 +187,7 @@ var universalBoth = [
     unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
     teammateChooseGuns, potLuckGuns, enemyHunting, myGunNow, shotgunOnly, backwardsMovement, sockHand, sensitivityExtreme, onlyOneShot, switchHands, doubleStrat, emptyMags, scoped, noCrosshair,
     formation, bunnyHop, snitch, knifeShoot, leftWall, target, standUp, lying, canada, pushToTalk, scream, redLight, backwardsKeyboard, budget, entireClip, defendYourTeammate, randomGun,
-    lessKeys, anime, mechanic, freeze, theBest, pause, botGun, hoard, newLanguage
+    lessKeys, anime, mechanic, freeze, theBest, pause, botGun, hoard, newLanguage, kneeCap, abilityPeek
 ];
 
 // Universal Team Comps
