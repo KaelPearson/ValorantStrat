@@ -115,11 +115,16 @@ const raidBoss = new Strat("Raid Boss", "You must choose one player to become th
 const supressiveFire = new Strat("SUPRESSIVE FIRE!!", "Everyone must by armour and Odins, rush a site while shouting 'Supressive Fire!!' while holding down mouse_1");
 const oneAtATime = new Strat("One At A Time", "Pick a bomb site, and only 1 teammate is allowed to push the site, once they either reach the bombsite or is killed, the next one can advance");
 const whoForgotSpike = new Strat("Who Forgot Spike?", "at the beginning of the round, leave spike at spawn, proceed to take a bombsite, once the bombsite is taken, 1 must return to spawn and retrive the spike and come back to the bombsite");
+const hotPotato = new Strat("Hot Potato", "You can't have the spike for more than 8 seconds");
+const switchSites = new Strat("Entry Frags", "After getting a kill going into one site you must attack another. Do this till either you get bomb down or kill everyone else");
+const oneByOne = new Strat("One by one we fall", "You must all rush a choke point one by one.");
+const leader = new Strat("leader", "You may only move when you have bomb");
 
 // Universal Defence
 const theFullStack = new Strat("The full stack", "Your team must choose one site that everyone must hold. You may not leave till a bomb is planted on another site");
 const noBackTracking = new Strat("Never turn back", "You can not go where you have already gone");
 const sittingDuck = new Strat("Sitting Duck", "Before the buy phase ends, pick a spot and stay there until either the round ends or a bomb is planted");
+const hideAndSeek = new Strat("Hide And Seek", "Try your best to hide. (Last person standing wins)");
 
 // Universal Both
 const unheard = new Strat("The unheard", "Your team may only use silenced weapons, walk and you are not allowed to speak in voice chat");
@@ -134,17 +139,53 @@ const teammateChooseGuns = new Strat("This is my favourite! Thank you!", "Everyo
 const potLuckGuns = new Strat("Pot Luck Special","Everyone must buy a gun and throw it in a pile once everyone has put in a gun count down to 3 and run in");
 const enemyHunting = new Strat("Enemy Spotted","Once you see an enemy you can not kill anyone else besides them till they are dead");
 const myGunNow = new Strat("My Gun Now", "After you kill an enemy, you must pick up their gun and use their gun to kill the next enemy, you may not kill anyone until you pick up their gun first.");
-
 const shotgunOnly = new Strat("Spread Shot (Thank you xRevelantx!)", "Only buy shotguns (Shorty, Bucky or Judge)");
 const backwardsMovement = new Strat("Looking behind (Thank you xRevelantx!)", "You can only walk backwards and are only allowed to turn around when standing still");
 const sockHand = new Strat("Sock (Thank you xRevelantx!)", "Put a sock over your hand");
 const sensitivityExtreme = new Strat("Can't control this (Thank you xRevelantx!)","Multiply your sensitivity by 3");
+const onlyOneShot = new Strat("One Shot", "One player must buy the Sheriff and after taking one shot pass it to a teammate. This is the only gun you can use");
+const switchHands = new Strat("Switch Hands", "Switch your hands for mouse and keyboard");
+const doubleStrat = new Strat("Double Strat!", "The next two strats you have to do this round");
+const emptyMags = new Strat("Empty Clips", "At the start of the round you must shoot your guns till you only have one clip left");
+const scoped = new Strat("Scoped in", "You many only shoot while aiming down a scope. (If its pistol round reroll)");
+const noCrosshair = new Strat("Crosshair gone", "You must disable your crosshair this round");
+const formation = new Strat("Stay together", "You must move in formation 3 in the front 2 in the back");
+const bunnyHop = new Strat("Bunny", "ALWAYS bunnyhop. (Even while shooting)");
+const snitch = new Strat("Tekashi", "One player must stay in spawn and report on all teammate locations");
+const knifeShoot = new Strat("The Assholes", "Try your hardest to convince the enemy team into a knife round then gun them down");
+const leftWall = new Strat("Maze", "You must always stick to the left wall");
+const target = new Strat("Target Acquired", "You must declare your target at the start of the round. You can only kill them before choosing your next target");
+const standUp = new Strat("Stand Up", "Stand up in real life while playing this round");
+const lying = new Strat("Lying Calls", "Play normally but every 1-5 calls are a lie");
+const canada = new Strat("Canadians", "Type im sorry after killing someone");
+const pushToTalk = new Strat("Chaos", "Push to talk must always be held down");
+const scream = new Strat("They know me for my one taps", "Only one tap");
+const redLight = new Strat("Red Light, Green Light", "One player dictates all movement by saying red light or green light");
+const backwardsKeyboard = new Strat("Backwards keyboard", "Title");
+const budget = new Strat("Low Eco", "Player with least cash provides for the entire team");
+const entireClip = new Strat("I think they are dead", "You must use your entire clip once you see an enemy even if they die");
+const defendYourTeammate = new Strat("He is trying his best!", "The person on the bottom of the scoreboard must shoot their gun straight in the air while running around and their teammates must make excuses for them ('They were dropped as a child')");
+const randomGun = new Strat("I believe", "You must close your eyes and randomly buy a gun");
+const lessKeys = new Strat("More deaths less keys", "Everytime someone dies you cannot use one key from left to right (W,A,S,D)");
+const anime = new Strat("Anime Lovers!", "You must talk like anime characters the entire round and the last person alive must be cheered on by everyone else");
+const mechanic = new Strat("The reloader", "Only one person on the team can reload other peoples guns. (Everyone must give them their gun to reload)");
+const freeze = new Strat("Freeze", "When an enemy is killed everyone must freeze for 5 seconds");
+const theBest = new Strat("YOU'RE AMAZING!", "When someone gets a kill everyone must compliment them in chat.");
+const pause = new Strat("Pause one sec", "The bottom frag types in chat pause(time) and you must sit till that time is met");
+const botGun = new Strat("One gun team", "The bottom fragger chooses a gun and everyone must buy it");
+const hoard = new Strat("Hoarders", "Everytime you see a gun on the ground you must bring it to spawn and make a pile");
 
 // Universal Strat Lists
-var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss, supressiveFire, oneAtATime, whoForgotSpike];
-var universalDefence = [theFullStack, noBackTracking, sittingDuck];
-var universalBoth = [unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
-    teammateChooseGuns, potLuckGuns, enemyHunting, myGunNow, shotgunOnly, backwardsMovement, sockHand, sensitivityExtreme];
+var universalAttack = [lastTwentySeconds, spikeTag, motivation, jumpCorners, mrPres, backsTogether, raidBoss, supressiveFire, oneAtATime, whoForgotSpike, hotPotato, switchSites, oneByOne,
+    leader
+];
+var universalDefence = [theFullStack, noBackTracking, sittingDuck, hideAndSeek];
+var universalBoth = [
+    unheard, spawnRun, backwardsHeadphones, dictator, noStopWalking, pokemonPlayers, teamSight, noLeftTurns,
+    teammateChooseGuns, potLuckGuns, enemyHunting, myGunNow, shotgunOnly, backwardsMovement, sockHand, sensitivityExtreme, onlyOneShot, switchHands, doubleStrat, emptyMags, scoped, noCrosshair,
+    formation, bunnyHop, snitch, knifeShoot, leftWall, target, standUp, lying, canada, pushToTalk, scream, redLight, backwardsKeyboard, budget, entireClip, defendYourTeammate, randomGun,
+    lessKeys, anime, mechanic, freeze, theBest, pause, botGun, hoard
+];
 
 // Universal Team Comps
 const womenTeam = new Strat("Power to women", "All women and Sova (long hair)");
